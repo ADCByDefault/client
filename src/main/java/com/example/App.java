@@ -17,7 +17,7 @@ public class App
             String riga = in.readLine();
 
             // avvio la communicazione con socket
-            Socket socket = new Socket("10.22.9.13", 3000);
+            Socket socket = new Socket("localhost", 3000);
 
             // invio la stinga messa dal utente
             DataOutputStream outVersoServer = new DataOutputStream(socket.getOutputStream());
